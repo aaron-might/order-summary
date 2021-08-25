@@ -1,0 +1,201 @@
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    background-color: #e0e8ff;
+    background-image: url(/assets/images/pattern-background-desktop.svg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content: center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction:normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 1000px;
+    max-width:100%;
+    margin:0 auto;
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: "Red Hat Display", sans-serif;
+    background-size: 100% 50%;
+
+}
+
+.main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card {
+   max-width: 475px;
+   border-radius:20px;
+   background: #fff;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin: 20px;
+}
+
+.card .card-image{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-content {
+width: 100%;
+border-radius: 0px 0px 20px 20px;
+}
+
+.card-content .info {
+width:75%;
+text-align: center;
+margin: 0 auto;
+align-items: center;
+}
+
+.card-content .info .heading1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font: size 1.5em;
+    font-weight:900;
+    color: #1f2f56;
+}
+
+.card-content .info .paragraph{
+    font-weight: 600;
+    color:#7280a7;
+    line-height: 2;
+}
+.card-payment {
+    background-color: #f5f7ff;
+    padding:20px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+    display:flex;
+    border-radius:10px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+    -webkit-box-align:center; 
+        -ms-flex-align:center;
+        align-items: center;
+        width:80%;
+text-align: center;
+margin: 0 auto;
+align-items: center;
+}
+
+.card-payment .sub-card-payment {
+    line-height:2;
+    margin-right: 56px;
+    text-align: center;
+}
+
+.card-payment-image {
+    display:block;
+    color : #e0e8ff;
+    border-radius:50%;
+    margin-right: 25px;
+}
+
+.card-payment .sub-card-payment .paragraph{
+    color: #7280a7;
+    font-weight: 650;
+    font-size:1.1rem;
+}
+
+.card-payment .sub-card-payment .sub-heading{
+color:#1f2f56;
+font-weight: 900;
+font-size: 1rem;
+}
+
+.card-payment .sub-card-payment-link {
+color: #3829e0;
+font-weight:550;
+font-size:1rem;
+padding: 8px;
+}
+
+.card-payment .sub-card-payment-link:hover {
+ text-decoration:none;
+ color :#f3160e;
+
+}
+
+.card-order {
+    margin-top: 30px ;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display:flex;
+    /* border-radius:10px; */
+    -webkit-box-align:center; 
+        -ms-flex-align:center;
+        align-items: center;
+    flex-direction:column;
+    align-items:center;
+
+}
+.card-order .choice{
+    background-color:#380ef3;
+    color:white;
+    font-size: 16px;
+    cursor:pointer;
+    transition: 0.5 all ease-in-out;
+    width:80%;
+    height:5vh;
+    border-radius: 8px 8px 8px 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    -webkit-box-shadow: 0px 10px 20px #9f98ec;
+           -box-shadow: 0px 10px 20px #9f98ec;
+}
+
+.choice:hover{
+background-color: #9088cc;
+}
+.card-order .card-link{
+   margin: 25px 18px 45px 18px;
+   text-decoration: none;
+   color: #7280a7
+}
+
+.card-link:hover{
+    color:#38415a;
+}
+@media screen and (max-width: 375px) {
+    body,
+    html {
+      width: 375px;
+      max-width: 100%;
+    }
+    .container {
+      background: url(/images/pattern-background-mobile.svg);
+      background-size: cover;
+    }
+  }
